@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import fs from 'fs/promises';
 import jsdom from 'jsdom';
-let data = await fs.readFile('data.json', 'utf8')
+let data = await getData();
 let currentEvents = [];
 data = JSON.parse(data);
 
@@ -328,7 +328,6 @@ async function speakrj() {
         .then(body => {
             body = body.replace(/\n/g, '');
             body = body.replace(/ /g, '');
-            fs.writeFile('body.html', body);
             try {
                 let datesTest = JSON.parse(body.split(`newChart(subscribers_chart_context,{type:'line',data:{labels:`)[1].split(`,datasets:`)[0]);
                 let subsTest = JSON.parse(body.split(`datasets:[{label:"Subscribers",data:`)[1].split(`,backgroundColor:`)[0])
@@ -344,4 +343,12 @@ async function speakrj() {
                 console.error(e)
             }
         })
+}
+
+async function getData() {
+    try {
+        return await fs.readFile('data.json', 'utf8');
+    } catch (e) {
+        return '{}';
+    }
 }

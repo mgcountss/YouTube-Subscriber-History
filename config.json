@@ -1,23 +1,23 @@
 {
     "id": "UCq-Fj5jknLsUf-MWSy4_brA",
     "joined": "2006-03-13",
-    "calculate": true,
+    "calculate": false,
     "data": {
         "tubealytics": {
-            "enabled": false
+            "enabled": true
         },
         "filmot": {
-            "enabled": false
+            "enabled": true
         },
         "youtubersDotMe": {
-            "enabled": false,
+            "enabled": true,
             "url": "https://us.youtubers.me/t-series/youtuber-stats"
         },
         "axernSpace": {
-            "enabled": false
+            "enabled": true
         },
         "speakrj": {
-            "enabled": false
+            "enabled": true
         },
         "youtube": {
             "enabled": true
