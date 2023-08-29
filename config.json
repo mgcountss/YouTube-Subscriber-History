@@ -1,0 +1,34 @@
+{
+    "id": "UCq-Fj5jknLsUf-MWSy4_brA",
+    "joined": "2006-03-13",
+    "calculate": true,
+    "data": {
+        "tubealytics": {
+            "enabled": false
+        },
+        "filmot": {
+            "enabled": false
+        },
+        "youtubersDotMe": {
+            "enabled": false,
+            "url": "https://us.youtubers.me/t-series/youtuber-stats"
+        },
+        "axernSpace": {
+            "enabled": false
+        },
+        "speakrj": {
+            "enabled": false
+        },
+        "youtube": {
+            "enabled": true
+        }
+    },
+    "urls": [
+        "https://www.youtube.com/user/tseries",
+        "https://www.youtube.com/channel/UCq-Fj5jknLsUf-MWSy4_brA",
+        "https://www.youtube.com/@tseries",
+        "https://www.youtube.com/t-series",
+        "https://www.youtube.com/c/t_series_",
+        "https://www.youtube.com/t_series_"
+    ]
+}
